@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Git常用命令的使用">
+  <meta name="description" content="Java基础知识复习 -- 集合">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git常用命令">
-<meta property="og:url" content="http://example.com/2021/03/09/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:title" content="Java基础知识-集合">
+<meta property="og:url" content="http://example.com/2021/03/13/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E9%9B%86%E5%90%88/index.html">
 <meta property="og:site_name" content="ZingFeng">
-<meta property="og:description" content="Git常用命令的使用">
+<meta property="og:description" content="Java基础知识复习 -- 集合">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-09T06:35:01.000Z">
-<meta property="article:modified_time" content="2021-03-09T14:51:59.355Z">
+<meta property="article:published_time" content="2021-03-13T09:32:02.000Z">
+<meta property="article:modified_time" content="2021-03-13T15:09:30.767Z">
 <meta property="article:author" content="ZingFeng">
-<meta property="article:tag" content="Git">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/03/09/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+<link rel="canonical" href="http://example.com/2021/03/13/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E9%9B%86%E5%90%88/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>Git常用命令 | ZingFeng</title>
+  <title>Java基础知识-集合 | ZingFeng</title>
   
 
 
@@ -166,7 +166,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/09/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/13/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E9%9B%86%E5%90%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -179,7 +179,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Git常用命令
+          Java基础知识-集合
         </h1>
 
         <div class="post-meta">
@@ -190,7 +190,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-03-09 14:35:01 / 修改时间：22:51:59" itemprop="dateCreated datePublished" datetime="2021-03-09T14:35:01+08:00">2021-03-09</time>
+              <time title="创建时间：2021-03-13 17:32:02 / 修改时间：23:09:30" itemprop="dateCreated datePublished" datetime="2021-03-13T17:32:02+08:00">2021-03-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -203,7 +203,7 @@
             </span>
 
           
-            <div class="post-description">Git常用命令的使用</div>
+            <div class="post-description">Java基础知识复习 -- 集合</div>
 
         </div>
       </header>
@@ -214,26 +214,76 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 把这个目录变成Git可管理的库</span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
-
-<h2 id="检查当前文件状态"><a href="#检查当前文件状态" class="headerlink" title="检查当前文件状态"></a>检查当前文件状态</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 查看仓库当前的状态</span><br><span class="line">git status</span><br><span class="line"># 状态简览</span><br><span class="line">git status -s</span><br><span class="line">git status -short</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 查看与上次文件修改内容的比较 </span><br><span class="line">git diff 文件全名</span><br></pre></td></tr></table></figure>
-
-<h2 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git clone &lt;url&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="查看仓库日志"><a href="#查看仓库日志" class="headerlink" title="查看仓库日志"></a>查看仓库日志</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 可以仓库的提交状态</span><br><span class="line">git log</span><br></pre></td></tr></table></figure>
-
-<h2 id="添加到暂存区"><a href="#添加到暂存区" class="headerlink" title="添加到暂存区"></a>添加到暂存区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 添加所有文件至暂存区</span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"># 添加单个文件至暂存区</span><br><span class="line">git add REMAKE.txt</span><br></pre></td></tr></table></figure>
-
-<h2 id="提交到存储区"><a href="#提交到存储区" class="headerlink" title="提交到存储区"></a>提交到存储区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br><span class="line"></span><br><span class="line">#如果需要在提交的时候，将提交代码的说明</span><br><span class="line">git commit -m &quot;message&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 回退至上一个版本</span><br><span class="line">git reset --hard HEAD^</span><br><span class="line"></span><br><span class="line"># 回退至上上一个版本</span><br><span class="line">git reset --hard HEAD^^</span><br><span class="line"></span><br><span class="line"># 一个（^）一个版本，以此类推</span><br><span class="line"></span><br><span class="line"># 回退至指定版本</span><br><span class="line"># 后面的编号可以通过 git log，查看提交的id值。</span><br><span class="line">git reset --hard 1094a</span><br></pre></td></tr></table></figure>
-
-<h2 id="记录你的每次命令"><a href="#记录你的每次命令" class="headerlink" title="记录你的每次命令"></a>记录你的每次命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
-
-<h2 id="存储库拉取"><a href="#存储库拉取" class="headerlink" title="存储库拉取"></a>存储库拉取</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 从另一个存储库或本地分支获取并整合</span><br><span class="line"># 相当于 git fetch 之后再 git merge</span><br><span class="line">git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="推送至远程主机"><a href="#推送至远程主机" class="headerlink" title="推送至远程主机"></a>推送至远程主机</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 将本地分支的更新，推送到远程主机</span><br><span class="line">git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</span><br></pre></td></tr></table></figure>
-
+        <h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><h2 id="List顶层接口（可重复的集合）"><a href="#List顶层接口（可重复的集合）" class="headerlink" title="List顶层接口（可重复的集合）"></a>List顶层接口（可重复的集合）</h2><p>实现类有：ArrayList、Vector、Stack、LinkedList</p>
+<h3 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h3><ul>
+<li>实现了List接口的可扩容数组，它的内部是基于数组实现的。</li>
+<li>允许所有的元素，包括空值</li>
+<li>用在查询比较多，但是插入和删除比较少的情况</li>
+<li>线程不安全，如果多个线程至少有两个线程修改了ArrayList的结构，就会导致线程安全问题，作为替代条件可以使用线程安全的List<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List list &#x3D; Collections.synchronizedList(new ArrayList(...))</span><br></pre></td></tr></table></figure>
+<h3 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h3></li>
+<li>是一个双向链表，允许存储任何元素（包括 null ）</li>
+<li>线程不安全</li>
+<li>用在查询比较少，但是插入删除比较多的情况</li>
+</ul>
+<h3 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h3><ul>
+<li>跟ArrayLis一样，都是基于数组实现的。</li>
+<li>它是线程安全的容器，它对内部的每个方法都简单粗暴的上锁</li>
+<li>同步方式需要的开销比较大</li>
+</ul>
+<h3 id="Stack"><a href="#Stack" class="headerlink" title="Stack"></a>Stack</h3><ul>
+<li>继承于Vector类</li>
+</ul>
+<h2 id="Set顶层接口（不可重复的集合）"><a href="#Set顶层接口（不可重复的集合）" class="headerlink" title="Set顶层接口（不可重复的集合）"></a>Set顶层接口（不可重复的集合）</h2><p>实现类有：HashSet、TreeSet、LinkedHashSet</p>
+<h3 id="HashSet"><a href="#HashSet" class="headerlink" title="HashSet"></a>HashSet</h3><ul>
+<li>Set接口的实现类。</li>
+<li>线程不安全，如果需要并发访问HashSet，必须在外部加锁，或者使用Collections.synchronizedSet(new HashSet())进行加锁操作。</li>
+<li>支持fail-fast机制。</li>
+</ul>
+<h3 id="TreeSet"><a href="#TreeSet" class="headerlink" title="TreeSet"></a>TreeSet</h3><ul>
+<li>是一个基于TreeMap的NavigableSet实现</li>
+<li>线程不安全，如果需要并发访问TreeSet，必须在外部加锁，或者使用Collections.synchronizedSet(new TreeSet())</li>
+<li>支持fail-fast机制。</li>
+</ul>
+<h3 id="LinkedHashSet"><a href="#LinkedHashSet" class="headerlink" title="LinkedHashSet"></a>LinkedHashSet</h3><ul>
+<li>继承于HashSet</li>
+<li>线程不安全，如果需要并发访问LinkedHashSet，必须在外部加锁，或者使用Collections.synchronizedSet(new LinkedHashSet())</li>
+<li>支持fail-fast机制。</li>
+</ul>
+<h2 id="Map顶层接口"><a href="#Map顶层接口" class="headerlink" title="Map顶层接口"></a>Map顶层接口</h2><p>实现类有：HashMap、TreeMap、Hashtable、LinkedHashMap、IdentityHashMap、WeakHashMap</p>
+<h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><ul>
+<li>是一个利用哈希表原理进行存储元素的集合</li>
+<li>允许的空的键，空的值</li>
+<li>线程不安全，如果需要线程安全操作，可使用Collections.synchronizedSet(new HashMap())</li>
+<li>支持fail-fast机制。</li>
+</ul>
+<h3 id="TreeMap"><a href="#TreeMap" class="headerlink" title="TreeMap"></a>TreeMap</h3><ul>
+<li>是一个基于NavigableMap实现的红黑树，它会根据key自然排序，也可以通过Comparator进行定制排序。</li>
+<li>线程不安全，如果需要并发访问TreeMap，必须在外部加锁，或者使用Collections.synchronizedSet(new TreeMap())</li>
+<li>支持fail-fast机制。</li>
+</ul>
+<h3 id="Hashtable"><a href="#Hashtable" class="headerlink" title="Hashtable"></a>Hashtable</h3><ul>
+<li>实现了一个哈希表，能够直接映射到值</li>
+<li>任何非空对象可以用作键和值。</li>
+<li>线程安全，如果需要多线程高并发推荐使用<strong>ConcurrentHashMap</strong>。</li>
+<li>支持fail-fast机制。</li>
+</ul>
+<h3 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h3><ul>
+<li>是Map接口的哈希表和链表实现的。</li>
+<li>线程不安全，如果需要并发访问LinkedHashMap，必须在外部加锁，或者使用Collections.synchronizedSet(new LinkedHashMap())</li>
+<li>支持fail-fast机制。</li>
+</ul>
+<h3 id="IdentityHashMap"><a href="#IdentityHashMap" class="headerlink" title="IdentityHashMap"></a>IdentityHashMap</h3><ul>
+<li>它跟HashMap的区别就是：IdentityHashMap采用“==”进行比较，而HashMap则采用“equals()”进行比较</li>
+<li>线程不安全</li>
+<li>支持fail-fast机制。</li>
+</ul>
+<h3 id="WeakHashMap"><a href="#WeakHashMap" class="headerlink" title="WeakHashMap"></a>WeakHashMap</h3><ul>
+<li>基于哈希表的Map基础实现，带有弱键。</li>
+<li>支持空键、空值</li>
+<li>支持fail-fast机制。</li>
+<li>经常作缓存</li>
+<li>不允许重复</li>
+</ul>
 
     </div>
 
@@ -243,7 +293,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Git/" rel="tag"># Git</a>
+              <a href="/tags/Java/" rel="tag"># Java</a>
           </div>
 
         
@@ -252,13 +302,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/03/07/Kotlin%E8%AF%AD%E8%A8%80%E5%85%A5%E6%89%8B%E4%BD%BF%E7%94%A8/" rel="prev" title="Kotlin语言入手使用">
-      <i class="fa fa-chevron-left"></i> Kotlin语言入手使用
+    <a href="/2021/03/11/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="prev" title="Java基础知识复习 -- 多线程">
+      <i class="fa fa-chevron-left"></i> Java基础知识复习 -- 多线程
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/03/11/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="next" title="Java基础知识复习 -- 多线程">
-      Java基础知识复习 -- 多线程 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -317,7 +364,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93"><span class="nav-number">1.1.</span> <span class="nav-text">创建版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A3%80%E6%9F%A5%E5%BD%93%E5%89%8D%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81"><span class="nav-number">1.2.</span> <span class="nav-text">检查当前文件状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93"><span class="nav-number">1.3.</span> <span class="nav-text">克隆仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E4%BB%93%E5%BA%93%E6%97%A5%E5%BF%97"><span class="nav-number">1.4.</span> <span class="nav-text">查看仓库日志</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%9A%82%E5%AD%98%E5%8C%BA"><span class="nav-number">1.5.</span> <span class="nav-text">添加到暂存区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4%E5%88%B0%E5%AD%98%E5%82%A8%E5%8C%BA"><span class="nav-number">1.6.</span> <span class="nav-text">提交到存储区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80"><span class="nav-number">1.7.</span> <span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%B0%E5%BD%95%E4%BD%A0%E7%9A%84%E6%AF%8F%E6%AC%A1%E5%91%BD%E4%BB%A4"><span class="nav-number">1.8.</span> <span class="nav-text">记录你的每次命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%98%E5%82%A8%E5%BA%93%E6%8B%89%E5%8F%96"><span class="nav-number">1.9.</span> <span class="nav-text">存储库拉取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A8%E9%80%81%E8%87%B3%E8%BF%9C%E7%A8%8B%E4%B8%BB%E6%9C%BA"><span class="nav-number">1.10.</span> <span class="nav-text">推送至远程主机</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9B%86%E5%90%88"><span class="nav-number">1.</span> <span class="nav-text">集合</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#List%E9%A1%B6%E5%B1%82%E6%8E%A5%E5%8F%A3%EF%BC%88%E5%8F%AF%E9%87%8D%E5%A4%8D%E7%9A%84%E9%9B%86%E5%90%88%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">List顶层接口（可重复的集合）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList"><span class="nav-number">1.1.1.</span> <span class="nav-text">ArrayList</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinkedList"><span class="nav-number">1.1.2.</span> <span class="nav-text">LinkedList</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vector"><span class="nav-number">1.1.3.</span> <span class="nav-text">Vector</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Stack"><span class="nav-number">1.1.4.</span> <span class="nav-text">Stack</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Set%E9%A1%B6%E5%B1%82%E6%8E%A5%E5%8F%A3%EF%BC%88%E4%B8%8D%E5%8F%AF%E9%87%8D%E5%A4%8D%E7%9A%84%E9%9B%86%E5%90%88%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">Set顶层接口（不可重复的集合）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HashSet"><span class="nav-number">1.2.1.</span> <span class="nav-text">HashSet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TreeSet"><span class="nav-number">1.2.2.</span> <span class="nav-text">TreeSet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinkedHashSet"><span class="nav-number">1.2.3.</span> <span class="nav-text">LinkedHashSet</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Map%E9%A1%B6%E5%B1%82%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.3.</span> <span class="nav-text">Map顶层接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap"><span class="nav-number">1.3.1.</span> <span class="nav-text">HashMap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TreeMap"><span class="nav-number">1.3.2.</span> <span class="nav-text">TreeMap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hashtable"><span class="nav-number">1.3.3.</span> <span class="nav-text">Hashtable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinkedHashMap"><span class="nav-number">1.3.4.</span> <span class="nav-text">LinkedHashMap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IdentityHashMap"><span class="nav-number">1.3.5.</span> <span class="nav-text">IdentityHashMap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WeakHashMap"><span class="nav-number">1.3.6.</span> <span class="nav-text">WeakHashMap</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
